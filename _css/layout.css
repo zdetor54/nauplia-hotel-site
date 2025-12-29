@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+*{
+	list-style:none;
+    list-style-type:none;
+	margin:0;
+    padding:0;
+	}
+
+.clearer {
+clear:both;
+
+}
+
+
+
+html, body {
+	height:80%;
+	margin:0;
+    padding:0;
+    outline:none;
+    border:0;
+    list-style:none;
+    list-style-type:none;
+    text-decoration:none;
+}
+
+
+body {
+	background-color: #AB9D89;
+	font:italic, 0.6em, Georgia, serif;
+	line-height: 1.1em;
+	color:#7B583E;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#centered {
+	position: absolute;
+	left:50%;
+	height:600px;
+	width: 1100px;
+	margin-top:-300px;
+	margin-left:-550px;
+	top: 50%;
+}
+
+.wrap {
+	height: 610px;
+	width: 995px;
+	background-image:url(../_images/layout/background-paper.png);
+	background-repeat: no-repeat;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+}
+#HomeLogo {
+	height: 110px;
+	width: 160px;
+/*	background-image: url(../_images/layout/HomeLogo.png);
+	*/background-position: 10px 50px;
+	background-repeat: no-repeat;
+	text-indent: -999px;
+	float:left;
+}
+#Header {
+	color: #7B583E;
+	font: italic 25px/1.5 georgia,serif;
+	text-align: center;
+	text-shadow: 0 1px 0 #FFFFFF;
+	height: 60px;
+	padding-left: 90px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	width: 620px;
+	background-image: url(../_images/layout/print_header.png);
+	background-position: 148px 75px;
+	background-repeat:no-repeat;
+	float:left;
+}
+
+
+#AboutLayout {
+	background-repeat: repeat;
+	background-position: -3px 0px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#Background {
+	background-image: url(../_images/layout/aboutBg.png);
+	background-repeat: no-repeat;
+}
+
+#banner {
+	text-indent:-999px;
+	position: relative;
+	top: 0px;
+}
+#banner a{
+	height: 120px;
+	width: 190px;
+	position: absolute;
+	display:block;
+/*	background-image:url(../_images/layout/logo.png);
+	background-repeat:no-repeat;
+	background-position: 10px 40px;	
+*/}
+
+
+#mainContent {
+	width: 620px;
+	padding-left: 60px;
+	position: relative;
+	float:left;
+}
+
+
+
+/* Nav */
+
+#nav {
+	float:left;
+}
+
+#flowerFront {
+	position:absolute;
+	left: 80%;
+	float: right;
+	width: 335px;
+	height: 650px;
+	background:url(../_images/layout/flower_front.png);
+	background-repeat: no-repeat;
+	background-position:right;
+	z-index: 1;
+	top: inherit;
+}
+
+
+#flowerBack {
+
+}
+
+#nav li {
+	text-indent:-999em;
+}
+
+#nav a {
+	display:block;
+
+}
+
+#nav li.active a{
+	cursor:default;
+}
+
+#nav li a{
+	background-repeat:no-repeat;
+	background-position: 105px 0px;
+	background-image:url(../_images/navigation/main-nav-shadow.png);
+}
+
+/*About ID*/
+#nav li#About{
+	width:190px;
+	height:56px;
+	margin-left:-14px;
+	background-image:url(../_images/navigation/aboutNav.png);
+	background-repeat:no-repeat;
+	background-position: 50px 0px;
+}
+
+#nav li#About:hover{
+	background-position: 20px 0px;
+	background-image:url(../_images/navigation/aboutNav.png);
+}
+
+#nav li#About.active{
+	background-position: -190px 0px;
+	background-image:url(../_images/navigation/aboutNav.png);
+	background-repeat:no-repeat;
+}
+
+#nav li#About a, #nav li#About a:hover{
+	width:190px;
+	height:56px;
+}
+
+li#About, li#Services, li#History, li#Contact {
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+}
+/*Services ID*/
+#nav li#Services{
+	width:190px;
+	height:56px;
+	margin-left:-14px;
+	background-image: url(../_images/navigation/servicesNav.png);
+	background-repeat:no-repeat;
+	background-position: 50px 0px;
+}
+
+#nav li#Services:hover{
+	background-image: url(../_images/navigation/servicesNav.png);
+	background-position: 20px 0px;
+}
+
+#nav li#Services.active{
+	background-image: url(../_images/navigation/servicesNav.png);
+	background-position: -190px 0px;
+}
+
+#nav li#Services a, #nav li#Services a:hover{
+	width:190px;
+	height:56px;
+}
+
+/*History ID*/
+#nav li#History{	
+	width:190px;
+	height:56px;
+	margin-left:-14px;
+	background-image: url(../_images/navigation/historyNav.png);
+	background-repeat:no-repeat;
+	background-position: 50px 0px;
+}
+
+
+#nav li#History:hover{
+	background-image:url(../_images/navigation/historyNav.png));
+	background-repeat:no-repeat;
+	background-position: 20px 0px;
+}
+
+#nav li#History.active{
+	background-image:url(../_images/navigation/historyNav.png));
+	background-repeat:no-repeat;
+	background-position: -190px 0px;
+}
+
+#nav li#History a, #nav li#Bio a:hover{
+	width:190px;
+	height:56px;
+}
+
+/*Contact ID*/
+#nav li#Contact{
+	width:190px;
+	height:56px;
+	margin-left:-14px;
+	background-image: url(../_images/navigation/contactNav.png);
+	background-repeat:no-repeat;
+	background-position: 50px 0px;
+}
+
+#nav li#Contact:hover{
+	background-image:url(../_images/navigation/contactNav.png));
+	background-repeat:no-repeat;
+	background-position: 20px 0px;
+}
+
+#nav li#Contact.active{
+	background-image:url(../_images/navigation/contactNav.png));
+	background-repeat:no-repeat;
+	background-position: -190px 0px;
+}
+
+#nav li#Contact a, #nav li#Contact a:hover{
+	width:190px;
+	height:56px;
+}
+
+#footer {
+	background-image: url(../_images/layout/footer.png);
+	background-position:bottom;
+	background-repeat: no-repeat;
+	padding:25px 10px;
+	text-align: right;
+}
+.imageGallery{
+	margin-top:20px;
+	position: relative;
+	float:left;
+	background-color: #FFF;
+	-moz-border-radius: 10px 10px  0px 10px;
+	-moz-box-shadow: 5px 5px 10px #CCC;
+	-webkit-border-radius: 10px 10px 0px 10px;
+	-webkit-box-shadow: 5px 5px 10px #CCC;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+#mainContent h1 {
+	color: #7B583E;
+	font: italic 25px/1.5 georgia,serif;
+	padding-bottom: 20px;
+	text-align: center;
+	text-shadow: 0 1px 0 #FFFFFF;
+	background-image: url(../_images/layout/print_header.png);
+	background-repeat: no-repeat;
+	background-position: center 30px;
+}
+
+img {
+	border: 8px solid #FFF;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+}
+#postCard {
+	background: url(../_images/hotel_photos/cardpostal.png);
+ 	background-position: 40px 0px;
+	background-repeat:no-repeat;
+	width: 583px;
+	height: 366px;
+	margin-top: 20px;
+	padding-top: 30px;
+	padding-left: 40px;
+}
+#centered .wrap #mainContent table tr td ul li {
+	list-style-type: disc;
+}
